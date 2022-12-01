@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "jjhelguero",
   "license": "MIT",
+  "scripts": {
+    "build-tree": "node build-tree.js"
+  },
   "devDependencies": {
     "dependency-tree": "^8.1.2"
   }
