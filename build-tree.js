@@ -1,9 +1,11 @@
 const dependencyTree = require('dependency-tree');
 
-const dep = dependencyTree({
-    filename: 'test/c/c.js',
-    directory: 'test'
+const filePaths = ['test/a.js','test/b.js','test/c/c.js']
+
+filePaths.forEach(filePath => {
+    const dep = dependencyTree({
+        filename: filePath,
+        directory: 'test'
+    })
+    console.log(dep)
 })
-
-
-console.log(dep)
